@@ -1,0 +1,85 @@
+/* inicio */
+.tittle-head-home{
+    text-align: center;
+}
+.home-body{
+    background-color: rgb(171, 157, 180);
+}
+.div-1{
+    text-align: center;
+    padding: 1%;
+}
+.div-2{
+    border: solid 2px rgb(255, 255, 255);
+    padding: 1%;
+}
+.social-ico{
+    width: 3%;
+    margin: 1%;
+}
+.social-ico:hover{
+    transition-duration: 0.3s;
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+/* candles page */
+.candle-type-tittle{
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    color: rgb(78, 78, 78);
+    font-family: sans-serif;
+}
+.item-area{
+    margin-left: 1%;
+    margin-right: 10%;
+    /* margin-top: 3%; */
+}
+.candles-area{
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    width: 20rem;
+    height: 45rem;
+    text-align: justify;
+    margin: 0.4%;
+    float: left;
+    padding: 20px;
+
+}
+.candle-img{
+    height: 15rem;
+    width: 15rem;
+    display: block;
+    margin: auto;
+
+
+}
+
+.form-cart{
+    float: right;
+    margin-right: 2%;
+    /* position: fixed; */
+}
+.card-title{
+    text-align: center;
+    /* guides */
+    /* border: solid 3px black; */
+    height: 5rem;
+}
+.card-text{
+    /* guides */
+    /* border: solid 3px black; */
+    height: 16rem;
+}
+.button{
+    border: solid 2px rgb(190, 190, 190);
+    background-color: white;
+    height: 3rem;
+}
+.button:hover{
+    border: solid 2px rgb(108, 163, 247);
+}
