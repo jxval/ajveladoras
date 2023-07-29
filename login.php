@@ -1,5 +1,15 @@
 <?php
+$connection = mysqli_connect("localhost", "root", "", "ajveladoras");
+$connection -> set_charset("utf8");
+
 session_start();
+
+
+if ($connection->connect_error) {
+    die("Error de conexion a la base de datos: " . $conn->connect_error);
+}
+
+
 
 // Verificar si el usuario ya ha iniciado sesión, redirigirlo a la página de inicio si es así.
 if (isset($_SESSION['user'])) {
@@ -7,8 +17,7 @@ if (isset($_SESSION['user'])) {
     exit;
 }
 
-// Conexión a la base de datos 
-require_once('connection.php');
+
 
 if ($connection->connect_error) {
     die("Error de conexión a la base de datos: " . $connection->connect_error);
@@ -34,13 +43,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-$connection->close();
 
+$connection->close();
 
 // Configuración de Google OAuth
 $client_id = '219558993868-c5f0hgog118hnmv1pa0oj924qffsk2ke.apps.googleusercontent.com';
 $client_secret = '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';
-$redirect_uri = 'http://localhost/AJ/home.php';
+$redirect_uri = 'http://localhost/ajveladoras-main/home.php';
 
 // URL de inicio de sesión con Google
 $auth_url = 'https://accounts.google.com/o/oauth2/auth';

@@ -98,14 +98,14 @@
 
 .bodylogRe {
     margin: 0;
-    color: #dfd9d9;
-    background: #b88c5cde;
+    color: #ffffff;
+    background: #b6a8b5d5;
     font: 600 16px/18px 'Open Sans',sans-serif;
 }
 
 .h2sing-in-up {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 *, :after, :before {
@@ -134,7 +134,7 @@ a {
     max-width: 400px;
     min-height: 500px;
     position: relative;
-    background: url("velas.jpg") no-repeat center;
+    background: url("../images/velas.jpg") no-repeat center;
     box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 
@@ -148,7 +148,7 @@ a {
     height: 100%;
     position: absolute;
     padding: 70px 70px 50px 70px;
-    background: #b88c5c65;
+    background: #dad7e06c;
 }
 
     .login-html .sign-in-htm,
@@ -223,12 +223,12 @@ a {
         }
 
         .login-form .group .label {
-            color: #f1ecec;
+            color: #5c5c5c;
             font-size: 12px;
         }
 
         .login-form .group .button {
-            background: #a87344;
+            background: #809099;
         }
 
         .login-form .group label .icon {
@@ -296,3 +296,4 @@ a {
 .foot-lnk {
     text-align: center;
 }
+
