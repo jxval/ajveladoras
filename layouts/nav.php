@@ -32,9 +32,25 @@
                         <li><a class="dropdown-item" href="menu-all.php">Todas las velas</a></li>
                     </ul>
                 </li>
+                <script>
+                    function enable(){
+                        input_1 = document.getElementById("input1").value;
+                        val = 0;
+
+                        if(input_1 == ""){
+                            val ++;
+                        }
+                        if(val == 0){
+                            document.getElementById("btn-search").disabled = false;
+                        }else{
+                            document.getElementById("btn-search").disabled = true;
+                        }
+                    }
+                    document.getElementById("input1"),addEventListener("keyup", enable);
+                </script>
                 <form class="d-flex" role="search" action="results.php" method="POST">
-                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search" name="db_search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    <input id="input1" class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search" name="db_search">
+                    <button id="btn-search" disabled class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Iniciar sesión</a>
