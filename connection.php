@@ -5,9 +5,10 @@ $connection -> set_charset("utf8");
 session_start();
 
 
-$conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error) {
+$connection = new mysqli($servername, $username, $password, $dbname);
+
+if ($connection->connect_error) {
     die("Error de conexión a la base de datos: " . $conn->connect_error);
 }
 
@@ -23,10 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verificar si el usuario ya existe en la base de datos
     $sql = "SELECT id FROM users WHERE user = '$user'";
-    $result = $conn->query($sql);
+    $result = $connection->query($sql);
 
     $sql2 = "SELECT id FROM users WHERE email = '$email'";
-    $result2 = $conn->query($sql2);
+    $result2 = $connection->query($sql2);
 
     if ($result ->num_rows >0) {
         // El usuario ya existe
@@ -38,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Insertar el nuevo usuario en la base de datos
         $sql = "INSERT INTO users (name, lastname, user, password, email) VALUES ('$name', '$lastname', '$user', '$password', '$email')";
-        if ($conn->query($sql) === TRUE) {
+        if ($connection->query($sql) === TRUE) {
             // Registro exitoso, redirigir al usuario a la página de inicio de sesión
             header("Location: login.php");
             exit;

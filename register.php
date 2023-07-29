@@ -8,7 +8,7 @@
 	<link rel="icon" href="images/AJ-logo-ico.png" type="image/x-icon">
     <title>Sing Up</title>
 </head>
-<body>
+<body class="bodylogRe">
 
 
 <?php if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>

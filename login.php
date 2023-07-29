@@ -7,16 +7,11 @@ if (isset($_SESSION['user'])) {
     exit;
 }
 
-// Conexión a la base de datos (modifica estos datos según tu configuración)
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ajveladoras";
+// Conexión a la base de datos 
+require_once('connection.php');
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Error de conexión a la base de datos: " . $conn->connect_error);
+if ($connection->connect_error) {
+    die("Error de conexión a la base de datos: " . $connection->connect_error);
 }
 
 // Procesar el formulario de inicio de sesión cuando se envía
@@ -26,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Consulta para verificar las credenciales del usuario
     $sql = "SELECT id FROM users WHERE user = '$user' AND password = '$password'";
-    $result = $conn->query($sql);
+    $result = $connection->query($sql);
 
     if ($result->num_rows == 1) {
         // Inicio de sesión exitoso, se encontró una coincidencia
@@ -39,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-$conn->close();
+$connection->close();
 
 
 // Configuración de Google OAuth
@@ -68,7 +63,7 @@ $auth_link = $auth_url . '?' . http_build_query($params);
 	<link rel="icon" href="images/AJ-logo-ico.png" type="image/x-icon">
     <title>Login</title>
 </head>
-<body>
+<body class="bodylogRe">
 
 <?php //if (isset($error)) echo "<p style='color:red;'>$error</p>"; ?>
 
