@@ -32,8 +32,8 @@
                         <li><a class="dropdown-item" href="menu-all.php">Todas las velas</a></li>
                     </ul>
                 </li>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+                <form class="d-flex" role="search" action="results.php" method="POST">
+                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search" name="db_search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
                 <li class="nav-item">
