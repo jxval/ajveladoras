@@ -53,10 +53,10 @@
                     <button id="btn-search" disabled class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Iniciar sesión</a>
+                    <a class="nav-link" href="login.php">Iniciar sesión</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Registrarte</a>
+                    <a class="nav-link" href="register.php">Registrarte</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Cerrar sesión</a>
