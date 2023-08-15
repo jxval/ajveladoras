@@ -1,4 +1,8 @@
 /* inicio */
+footer{
+    color: white;
+    text-align: center;
+}
 .tittle-head-home{
     text-align: center;
 }
@@ -82,4 +86,68 @@
 }
 .button:hover{
     border: solid 2px rgb(108, 163, 247);
+}
+
+/* About us page */
+
+.about-body{
+    background-color: #555869;
+}
+.div-1-about{
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.616);
+    padding: 2%;
+}
+.div-2-about{
+    border: solid 2px rgb(179, 179, 179);
+    padding: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+}.about-desc{
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+}
+.imgage-logo{
+    height: 20%;
+    width: 20%;
+}
+
+/* admin login page */
+.adminlogin-body{
+    background-image: url(../images/ALIB.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+img{
+    height: 20%;
+    width: 20%;
+    
+}
+.adminlogindiv-1{
+    border-radius: 20px 20px 20px 20px;
+    background-color: #5558698a;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgb(255, 254, 254);
+    padding: 2%;
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-bottom: 3%;
+    margin-right: 20%;
+}
+.adminlogindiv-2{
+    border-radius: 20px 20px 20px 20px;
+    border: solid 2px rgb(179, 179, 179);
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;   
+}
+/* dashboard page */
+.dashboard-body{
+    background-color: #6e6d6d;
 }

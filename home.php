@@ -63,5 +63,10 @@
                 <a href=""><img class="social-ico" src="images/TT.png" alt=""></a>
             </div>
         </div>
+    <footer>
+        <p>
+            © 2023 ajveladoras
+        </p>
+    </footer>
 </body>
 </html>
